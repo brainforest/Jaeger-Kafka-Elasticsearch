@@ -1,0 +1,4 @@
+reader/config/JaegerHttpSender.class
+reader/tracing/TracingConsumerConfig.class
+reader/TracingApplication.class
+reader/tracing/TracingConsumer.class
