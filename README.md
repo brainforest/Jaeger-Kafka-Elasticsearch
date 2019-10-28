@@ -7,8 +7,8 @@ Step:
 1- download and setup Elasticsearch and Kibana and simple run them.
 2- download jaeger and unzip 
 3- Jaeger can store data into elasticsearch or kafka. TraceProducer has methods for 
-
-@Bean
+```java
+@Bean 
     public Tracer tracer() {
         return io.jaegertracing.Configuration.fromEnv(applicationName)
                 .withSampler(
@@ -26,7 +26,7 @@ Step:
                                 ))
                 .getTracer();
     }
-
+```
 Based on which store you choose (default it is HTTPSender)
 
 4- To start querying from elasticsearch 
